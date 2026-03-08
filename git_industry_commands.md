@@ -756,7 +756,8 @@ Marks a commit as bad (has bug).
 Example:
 git bisect bad d4e5f6
  
- <!-- ### Command Name: Create GitHub Repository
+ ### ! Github Features to Demonstrate
+ ### Command Name: Create GitHub Repository
 Syntax:
 Create repository from GitHub website.
 Purpose:
@@ -765,4 +766,128 @@ Example:
 1. Go to GitHub
 2. Click New Repository
 3. Enter repository name
-4. Click Create Repository -->
+4. Click Create Repository 
+
+### Command Name: Add README
+Syntax:
+Create README.md file
+Purpose:
+Adds project description to the repository.
+Example:
+Create README.md in repository
+
+### Command Name: Add .gitignore
+Syntax:
+Create .gitignore file
+Purpose:
+Ignores unnecessary files from Git tracking.
+Example:
+Create .gitignore and add node_modules/
+
+### Command Name: Create Issue
+Syntax:
+Create issue from GitHub Issues tab
+Purpose:
+Used to report bugs or tasks.
+Example:
+Go to Issues → Click New Issue
+
+### Command Name: Assign Issue
+Syntax:
+Assign issue to collaborator
+Purpose:
+Assigns responsibility for fixing the issue.
+Example:
+Open issue → Assign to user
+
+### Command Name: Create Branch
+Syntax:
+git branch <branch-name>
+Purpose:
+Creates a new branch.
+Example:
+git branch feature1
+
+### Command Name: Push Branch
+Syntax:
+git push -u origin <branch-name>
+Purpose:
+Pushes branch to remote repository.
+Example:
+git push -u origin feature1
+
+### Command Name: Create Pull Request
+Syntax:
+Create PR from GitHub Pull Requests tab
+Purpose:
+Requests merging branch changes into main branch.
+Example:
+Go to Pull Requests → New Pull Request
+
+### Command Name: Review Pull Request
+Syntax:
+Review PR from GitHub
+Purpose:
+Checks code before merging.
+Example:
+Open Pull Request → Add review
+
+### Command Name: Merge Pull Request
+Syntax:
+Merge PR in GitHub
+Purpose:
+Combines branch changes into main branch.
+Example:
+Click Merge Pull Request
+
+### Command Name: Resolve Merge Conflict
+Syntax:
+Edit conflicting files and commit
+Purpose:
+Fixes conflicts between branches.
+Example:
+Fix code → git add . → git commit
+
+### Command Name: Close Issue
+Syntax:
+Close issue in GitHub
+Purpose:
+Marks issue as completed.
+Example:
+Click Close Issue
+
+### Command Name: Add Labels
+Syntax:
+Add labels from GitHub
+Purpose:
+Categorizes issues and pull requests.
+Example:
+Add label "bug"
+
+### Command Name: Add Collaborators
+Syntax:
+Add users in repository settings
+Purpose:
+Allows others to contribute to repository.
+Example:
+Settings → Collaborators → Add user
+
+### Command Name: Commit and Push File
+Syntax:
+git add git_industry_commands.md
+git commit -m "Added industry level Git commands practice"
+git push
+Purpose:
+Adds file to repository and pushes to GitHub.
+Example:
+git add git_industry_commands.md
+git commit -m "Added industry level Git commands practice"
+git push
+
+### Command Name: Submission
+Syntax:
+Submit repository link
+Purpose:
+Share GitHub repository for evaluation.
+Example:
+Submit GitHub repository link containing git_industry_commands.md
