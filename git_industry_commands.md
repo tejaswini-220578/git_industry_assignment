@@ -389,3 +389,211 @@ Purpose:
 Combines changes from another branch.
 Example:
 git merge feature1
+
+### Command Name: git merge --no-ff
+Syntax:
+git merge --no-ff <branch-name>
+Purpose:
+Merges a branch and keeps a merge commit.
+Example:
+git merge --no-ff feature1
+
+### 8. remote repository commands
+### Command Name: git remote
+Syntax:
+git remote
+Purpose:
+Shows remote repository names.
+Example:
+git remote
+
+### Command Name: git remote -v
+Syntax:
+git remote -v
+Purpose:
+Shows remote repository URLs.
+Example:
+git remote -v
+
+### Command Name: git remote add
+Syntax:
+git remote add <name> <url>
+Purpose:
+Adds a new remote repository.
+Example:
+git remote add origin https://github.com/user/repo.git
+
+### Command Name: git remote remove
+Syntax:
+git remote remove <name>
+Purpose:
+Removes a remote repository.
+Example:
+git remote remove origin
+
+### Command Name: git fetch
+Syntax:
+git fetch
+Purpose:
+Downloads changes from remote repository.
+Example:
+git fetch
+
+### Command Name: git fetch --all
+Syntax:
+git fetch --all
+Purpose:
+Fetches changes from all remote repositories.
+Example:
+git fetch --all
+
+### Command Name: git pull
+Syntax:
+git pull
+Purpose:
+Fetches and merges changes from remote repository.
+Example:
+git pull
+
+### Command Name: git pull --rebase
+Syntax:
+git pull --rebase
+Purpose:
+Fetches changes and applies them using rebase.
+Example:
+git pull --rebase
+
+
+### Command Name: git push
+Syntax:
+git push
+Purpose:
+Uploads commits to remote repository.
+Example:
+git push
+
+
+### Command Name: git push -u origin branch-name
+Syntax:
+git push -u origin <branch-name>
+Purpose:
+Pushes branch and sets upstream branch.
+Example:
+git push -u origin master
+
+### Command Name: git push --force
+Syntax:
+git push --force
+Purpose:
+Force pushes changes to remote repository.
+Example:
+git push --force
+
+### 9 . stash commands
+### Command Name: git stash
+Syntax:
+git stash
+Purpose:
+Temporarily saves uncommitted changes.
+Example:
+git stash
+
+### Command Name: git stash list
+Syntax:
+git stash list
+Purpose:
+Shows list of saved stashes.
+Example:
+git stash list
+
+### Command Name: git stash pop
+Syntax:
+git stash pop
+Purpose:
+Applies latest stash and removes it.
+Example:
+git stash pop
+
+### Command Name: git stash apply
+Syntax:
+git stash apply
+Purpose:
+Applies stash without removing it.
+Example:
+git stash apply
+
+
+### Command Name: git stash drop
+Syntax:
+git stash drop
+Purpose:
+Deletes a specific stash.
+Example:
+git stash drop stash@{0}
+
+### COMMAND NAME : git statsh clear
+Syntax:
+git stash clear
+Purpose:
+Deletes all stashes.
+Example:
+git stash clear
+
+### 7 . RESET &UNDO COMMMANDS
+### Command Name: git reset
+Syntax:
+git reset <commit-id>
+Purpose:
+Moves HEAD to a previous commit.
+Example:
+git reset 3f2a1c
+
+### Command Name: git reset --soft
+Syntax:
+git reset --soft <commit-id>
+Purpose:
+Resets commit but keeps changes staged.
+Example:
+git reset --soft HEAD~1
+
+
+### Command Name: git reset --mixed
+Syntax:
+git reset --mixed <commit-id>
+Purpose:
+Resets commit and unstages changes.
+Example:
+git reset --mixed HEAD~1
+
+### Command Name: git reset --hard
+Syntax:
+git reset --hard <commit-id>
+Purpose:
+Resets commit and deletes all changes.
+Example:
+git reset --hard HEAD~1
+
+
+### Command Name: git revert
+Syntax:
+git revert <commit-id>
+Purpose:
+Creates a new commit to undo changes.
+Example:
+git revert 3f2a1c
+
+### Command Name: git clean -f
+Syntax:
+git clean -f
+Purpose:
+Removes untracked files.
+Example:
+git clean -f
+
+### Command Name: git clean -fd
+Syntax:
+git clean -fd
+Purpose:
+Removes untracked files and directories.
+Example:
+git clean -fd
