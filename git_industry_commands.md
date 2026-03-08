@@ -38,9 +38,7 @@ git config --list
 (Add screenshot here)
 
 ---
-
--- ### Command Name
-git config --unset user.name
+### Command Name -git config --unset user.name
 ### Syntax
 git config --unset user.name
 ### Purpose
@@ -50,7 +48,6 @@ git config --unset user.name
 ### Screenshot Proof
 (Add screenshot here)
 
---
 
 ## 2. Repository Setup Commands
 ### Command Name
@@ -105,8 +102,7 @@ git clone --depth 1 https://github.com/user/repo.git
 ## 3. Repository Status & Inspection
 ---
 
-### Command Name
-git status
+### Command Name - git status
 ### Syntax
 git status
 ### Purpose
@@ -221,9 +217,175 @@ git reflog
 
 Syntax:
 git shortlog
-
 Purpose:
 The git shortlog command provides a summarized log of commits grouped by author. It shows how many commits each contributor made.
-
 Example:
 git shortlog
+
+### 4 . FILE TRACKING COMMANDS 
+### Command Name: git add
+Syntax:
+git add <file-name>
+Purpose:
+Adds a specific file to the staging area.
+Example:
+git add git_industry_commands.md
+
+
+### Command Name: git add .
+Syntax:
+git add .
+Purpose:
+Adds all modified files to the staging area.
+Example:
+git add .
+
+### Command Name: git add -p
+Syntax:
+git add -p
+Purpose:
+Adds changes to staging area step by step.
+Example:
+git add -p
+
+### Command Name: git restore
+Syntax:
+git restore <file-name>
+Purpose:
+Restores the file to the last committed version.
+Example:
+git restore git_industry_commands.md
+
+### Command Name: git restore --staged
+Syntax:
+git restore --staged <file-name>
+Purpose:
+Removes the file from the staging area.
+Example:
+git restore --staged git_industry_commands.md
+
+### Command Name: git rm
+Syntax:
+git rm <file-name>
+Purpose:
+Deletes a file from the repository.
+Example:
+git rm sample.txt
+
+
+### Command Name: git mv
+Syntax:
+git mv <old-name> <new-name>
+Purpose:
+Renames or moves a file.
+Example:
+git mv old.txt new.txt
+
+### 5. COMMIT COMMANDS
+### Command Name: git commit
+Syntax:
+git commit
+Purpose:
+Creates a commit and opens editor to write message.
+Example:
+git commit
+
+### Command Name: git commit -m
+Syntax:
+git commit -m "message"
+Purpose:
+Creates a commit with a message.
+Example:
+git commit -m "Added new changes"
+
+### Command Name: git commit --amend
+Syntax:
+git commit --amend
+Purpose:
+Modifies the last commit.
+Example:
+git commit --amend
+
+### Command Name: git commit --no-edit
+Syntax:
+git commit --amend --no-edit
+Purpose:
+Amends last commit without changing message.
+Example:
+git commit --amend --no-edit
+
+### 6. BRANCH MANAGEMENT COMMANDS 
+### Command Name: git branch
+Syntax:
+git branch
+Purpose:
+Shows all local branches.
+Example:
+git branch
+
+### Command Name: git branch -a
+Syntax:
+git branch -a
+Purpose:
+Shows all local and remote branches.
+Example:
+git branch -a
+
+### command name : git branch -d
+Syntax:
+git branch -d <branch-name>
+Purpose:
+Deletes a branch safely.
+Example:
+git branch -d feature1
+
+
+#### Command Name: git branch -D
+Syntax:
+git branch -D <branch-name>
+Purpose:
+Force deletes a branch.
+Example:
+git branch -D feature1
+
+### Command Name: git checkout
+Syntax:
+git checkout <branch-name>
+Purpose:
+Switches to another branch.
+Example:
+git checkout master
+
+### Command Name: git checkout -b
+Syntax:
+git checkout -b <branch-name>
+Purpose:
+Creates and switches to a new branch.
+Example:
+git checkout -b feature1
+
+### Command Name: git switch
+Syntax:
+git switch <branch-name>
+Purpose:
+Switches to another branch.
+Example:
+git switch master
+
+### Command Name: git switch -c
+Syntax:
+git switch -c <branch-name>
+Purpose:
+Creates and switches to a new branch.
+Example:
+git switch -c new-feature
+
+
+###  MERGE & INTEGRATION COMMANDS 
+### Command Name: git merge
+Syntax:
+git merge <branch-name>
+Purpose:
+Combines changes from another branch.
+Example:
+git merge feature1
