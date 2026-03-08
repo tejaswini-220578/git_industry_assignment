@@ -539,7 +539,7 @@ Deletes all stashes.
 Example:
 git stash clear
 
-### 7 . RESET &UNDO COMMMANDS
+### 10 . RESET &UNDO COMMMANDS
 ### Command Name: git reset
 Syntax:
 git reset <commit-id>
@@ -597,3 +597,172 @@ Purpose:
 Removes untracked files and directories.
 Example:
 git clean -fd
+
+### 11.REBASING COMMANDS
+### Command Name: git rebase
+Syntax:
+git rebase <branch-name>
+Purpose:
+Applies commits from one branch onto another branch.
+Example:
+git rebase master
+
+### Command Name: git rebase -i
+Syntax:
+git rebase -i <commit-id>
+Purpose:
+Performs interactive rebase to edit commits.
+Example:
+git rebase -i HEAD~3
+
+### Command Name: git rebase --continue
+Syntax:
+git rebase --continue
+Purpose:
+Continues rebase after resolving conflicts.
+Example:
+git rebase --continue
+
+### Command Name: git rebase --abort
+Syntax:
+git rebase --abort
+Purpose:
+Cancels the rebase process.
+Example:
+git rebase --abort
+
+
+### 12.cherry pick& patch commands 
+### Command Name: git cherry-pick
+Syntax:
+git cherry-pick <commit-id>
+Purpose:
+Applies a specific commit from another branch.
+Example:
+git cherry-pick a1b2c3
+
+### Command Name: git format-patch
+Syntax:
+git format-patch <commit-id>
+Purpose:
+Creates patch files from commits.
+Example:
+git format-patch HEAD~1
+
+### Command Name: git apply
+Syntax:
+git apply <patch-file>
+Purpose:
+Applies changes from a patch file.
+Example:
+git apply patch-file.patch
+
+### Command Name: git am
+Syntax:
+git am <patch-file>
+Purpose:
+Applies patch and creates commit.
+Example:
+git am patch-file.patch
+
+### 13.Tagging commands 
+### Command Name: git tag
+Syntax:
+git tag
+Purpose:
+Lists all tags in repository.
+Example:
+git tag
+
+### Command Name: git tag -a
+Syntax:
+git tag -a <tag-name> -m "message"
+Purpose:
+Creates an annotated tag.
+Example:
+git tag -a v1.0 -m "First version"
+
+### Command Name: git tag -d
+Syntax:
+git tag -d <tag-name>
+Purpose:
+Deletes a tag.
+Example:
+git tag -d v1.0
+
+### Command Name: git push origin --tags
+Syntax:
+git push origin --tags
+Purpose:
+Pushes all tags to remote repository.
+Example:
+git push origin --tags
+
+### 14 . Submodule commands 
+### Command Name: git submodule add
+Syntax:
+git submodule add <repository-url>
+Purpose:
+Adds another repository as a submodule.
+Example:
+git submodule add https://github.com/user/project.git
+
+### Command Name: git submodule init
+Syntax:
+git submodule init
+Purpose:
+Initializes submodules in the repository.
+Example:
+git submodule init
+
+### Command Name: git submodule update
+Syntax:
+git submodule update
+Purpose:
+Updates submodules to the correct version.
+Example:
+git submodule update
+
+### 15. Debbugging commands 
+### Command Name: git bisect
+Syntax:
+git bisect
+Purpose:
+Helps find the commit that introduced a bug.
+Example:
+git bisect
+
+### Command Name: git bisect start
+Syntax:
+git bisect start
+Purpose:
+Starts the bisect process.
+Example:
+git bisect start
+
+### Command Name: git bisect good
+Syntax:
+git bisect good <commit-id>
+Purpose:
+Marks a commit as good (no bug).
+Example:
+git bisect good a1b2c3
+
+### Command Name: git bisect bad
+Syntax:
+git bisect bad <commit-id>
+Purpose:
+Marks a commit as bad (has bug).
+Example:
+git bisect bad d4e5f6
+ 
+ <!-- ### Command Name: Create GitHub Repository
+Syntax:
+Create repository from GitHub website.
+Purpose:
+Creates a new repository to store project code.
+Example:
+1. Go to GitHub
+2. Click New Repository
+3. Enter repository name
+4. Click Create Repository -->
